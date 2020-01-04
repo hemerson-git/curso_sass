@@ -1,0 +1,17 @@
+$template: dark;
+
+header{
+    @if $template == dark {
+        color: #fff;
+        background: #222;
+    } @else if $template == light {
+        color: #333;
+        background: #fff;
+    } @else if $template == sea {
+        color: #1a81cd;
+        background: #f0f0f0;
+    } @else {
+        color: #555;
+        background: #f0f0f0;
+    }
+}

@@ -1,0 +1,32 @@
+$blue: #00f;
+
+nav {
+    width: 100%;
+    background: #000;
+    color: lighten($blue, 10%);
+
+    ul {
+        list-style: none;
+        padding: 20px 0;
+    }
+
+    li {
+        color: red;
+        margin: 0 20px;
+
+        font: {
+            family: Arial;
+            size: 14px;
+            weight: bold;
+        }
+    }
+
+    a {
+        color: red;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+}

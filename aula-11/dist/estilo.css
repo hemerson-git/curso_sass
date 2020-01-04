@@ -1,0 +1,39 @@
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+.animal-puma {
+  background-image: url(imagens/puma.png);
+}
+
+.animal-sea-slug {
+  background-image: url(imagens/sea-slug.png);
+}
+
+.animal-egret {
+  background-image: url(imagens/egret.png);
+}
+
+.animal-salamander {
+  background-image: url(imagens/salamander.png);
+}
+
+#item-6 {
+  width: 12;
+}
+
+#item-4 {
+  width: 8;
+}
+
+#item-2 {
+  width: 4;
+}

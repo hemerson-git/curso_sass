@@ -1,0 +1,37 @@
+$red: 100;
+$green: 200;
+$blue: 100;
+$alpha: 0.8;
+$color: #ddd;
+$amount: 80%;
+$font: Open Sans;
+$weight: "bold";
+$real_round: 2.2;
+$real: 2.5;
+
+body {
+    background: rgb($red, $green, $blue);   //retorna o valor em hexadecimal
+}
+
+section {
+    background: rgba($red, $green, $blue, $alpha);
+}
+
+section div{
+    background: lighten($color, $amount);   //deixa a cor mais clara em certa porcentagem
+    background: darken($color, $amount);    //escuresse a cor em certa porcentagem
+    font-family: quote($font);              //recebe um valor sem aspas e acrescenta as aspas
+    font-weight: unquote($weight);          //recebe um valor entre aspas e as tira
+    padding: str-length($weight);           //retorna o tamanho da string
+    font-family: to-upper-case($weight);    //deixa todas as letras maiúsculas
+    font-family: to-lower-case($weight);    //deixa todas as letras minúsculas
+    width: percentage(str-length($weight)); //retorna o percentual
+    margin: round($real_round);             //faz um arredondamento
+    margin: ceil($real);                    //arredonda jogando o número para cima
+    margin: floor($real);                   //trunca o número
+}
+
+@function calc-fluid($target, $container){
+    @return ($target / $container) * 100%
+}
+

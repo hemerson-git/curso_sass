@@ -1,0 +1,25 @@
+$btn-padding: 10px 15px;
+
+body{
+    background-color: dimgrey;
+}
+
+.btn-custom{
+    padding: $btn-padding;
+    display: block;
+    margin: 5px;
+    background-color: darkviolet;
+    color: white;
+    border:{
+        width: 1px;
+        style: solid;
+        color: skyblue;
+        radius: 15px;
+    }
+}
+
+.btn-follow {
+    @extend .btn-custom;
+    background-color: dodgerblue;
+    border-color: deeppink;
+}

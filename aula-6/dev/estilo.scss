@@ -1,0 +1,20 @@
+h1 {
+    //    font-size: 2em + 22px; -> Falha de conversão pelas unidades serem diferentes
+    font-size: 5px + 2;
+    //    font-size: 5px * 2px; -> Falha por se transformar em uma potencia
+}
+
+// DIVISÃO COM O SASS
+$base-size: 20px;
+$line-height: 22px;
+
+p {
+    font: 10px/8px bold italic serif;
+    $width: 1000px;
+    width: $width/2;
+    width: round(1.5)/2;
+    height: (500px/2);
+    margin-left: 5px + 8px/2px;
+    font: (italic bold 10px/8px);
+    font-size: $base-size / $line-height;
+}

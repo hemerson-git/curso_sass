@@ -1,0 +1,17 @@
+body {
+  background-color: dimgrey; }
+
+.btn-custom, .btn-follow {
+  padding: 10px 15px;
+  display: block;
+  margin: 5px;
+  background: linear-gradient(30deg, lightblue, lightpink);
+  color: #555;
+  border-width: 1px;
+  border-style: solid;
+  border-color: skyblue;
+  border-radius: 15px; }
+
+.btn-follow {
+  background: dodgerblue;
+  border-color: deeppink; }

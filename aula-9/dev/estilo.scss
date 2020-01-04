@@ -1,0 +1,8 @@
+%center{
+    display:block;
+    margin: 0 auto;
+}
+
+div{
+    @extend %center; //A principal diferença entre o placeholder e os mixins é que ele agrupa ao compilar
+}
